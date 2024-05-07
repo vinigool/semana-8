@@ -1,1 +1,54 @@
+print("Olá", "mundo", sep="-") 
+print("Olá", "Python", end="!\n")
 
+print("18", "04", "2023", sep="/")
+print("nome", "sobrenome", "email", sep="; ")
+
+print("Loading", end=" ")
+print("[OK]")
+
+nome = input("Digite seu nome: ")
+print("Olá", nome)
+
+Fahrenheit = int(input("Digite sua temperatura em graus celsius: "))
+print("isso em Fahrenheit dá", Fahrenheit + 32)
+
+cidade = input("onde você mora ?")
+print("então quer dizer que voce mora em", cidade)
+
+itens = input("Digite sua lista de compras separados por vírgula: ").split(',')
+print("Itens:", itens)
+
+altura = float(input("Digite sua altura em metros: "))
+print("Sua altura é", altura, "metros.")
+
+def infinito():
+    print("Digite alguns nomes para adicionar à lista (digite 'sair' para terminar):")
+    nomes = []
+    while True:#        entrada = input()
+        if entrada.lower() == 'sair':
+            break
+        else:
+            numeros.append(int(entrada))
+    print("Nomes coletados:", nomes)
+
+infinito()
+
+
+def calcular():
+    n1 = float(input("Entre com o primeiro número:"))
+    n2 = float(input("Entre com o segundo número:"))
+    op = input("Entre com a operação (+, -, *, ou /):")
+    
+    if op == '+':
+        r = n1 + n2
+    elif op == '-':
+        r = n1 - n2
+    elif op == '*':
+        r = n1 * n2
+    elif op == '/':
+        r = n1 / n2
+    else:
+        r = "operador desconhecido"
+    
+    print("resultado:", r)
